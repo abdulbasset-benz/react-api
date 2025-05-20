@@ -1,17 +1,19 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import SearchBar from "./components/SearchBar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const handleSubmit = (term) => {
+    console.log("do a search with term : ", term);
+  };
   return (
-    <>
-      <div className="text-red-500 text-6xl font-extrabold text-center w-screen">
-        hello world
+    <div className="min-w-screen bg-gray-100 flex items-center justify-center p-4">
+      <div className="w-full max-w-xl bg-white shadow-lg rounded-lg p-6">
+        <h1 className="text-2xl font-bold mb-4 text-center text-gray-800">
+          Image Search
+        </h1>
+        <SearchBar onSubmit={handleSubmit} />
       </div>
-    </>
+    </div>
   );
 }
 
