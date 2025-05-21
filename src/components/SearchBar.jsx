@@ -14,7 +14,7 @@ function SearchBar({ onSubmit }) {
   };
 
   return (
-    <form className="flex">
+    <form className="flex" onSubmit={handleSubmit}>
       <input
         type="search"
         name="search"
