@@ -1,74 +1,50 @@
-🚀 React + Vite – Unsplash API Image Search
+react-api 📸
 
-A minimal React project using Vite and Tailwind CSS, connected to the Unsplash API to fetch and display images based on user queries.
-📸 Project Overview
+This is a small React project built with Vite to practice working with APIs, managing component state, and rendering dynamic lists. It connects to the Unsplash Free API to fetch and display images based on user search input.
 
-This project demonstrates how to:
+The UI is kept intentionally minimal — styling with Tailwind CSS is set up but hasn’t been fully developed yet. The current focus is functionality, state flow, and API integration.
+🔧 Stack
 
-    Connect to a public API (Unsplash)
+    React
 
-    Manage state in React
+    Vite
 
-    Lift state between components
+    Tailwind CSS
 
-    Render dynamic lists
+    ESLint
 
-    Use Tailwind CSS (basic setup)
+    Unsplash API
 
-    🧪 The UI is still a work in progress — styling will be improved later. Functionality was the main focus for now.
+No UI libraries or external state tools — this project is focused on understanding core React concepts and API handling.
+🚀 How to Run It
 
-🛠️ Tech Stack
+Clone the repo, install dependencies, and start the dev server:
 
-    ⚛️ React
-
-    ⚡ Vite
-
-    🎨 Tailwind CSS
-
-    🌐 Unsplash API
-
-    🧹 ESLint
-
-🧠 What I Learned
-
-    How to consume an external API and manage access keys
-
-    How to lift state up from child to parent and pass it to siblings
-
-    Usage of the .map() function to dynamically generate lists
-
-    Structuring components in a clean, reusable way
-
-    Initial setup and integration of Tailwind CSS for styling
-
-📦 Getting Started
-
-1. Clone the repo
-
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
-2. Install dependencies
-
+git clone https://github.com/your-username/react-api.git
+cd react-api
 npm install
 
-3. Add your Unsplash API key
+Create a .env file in the root directory and add your Unsplash API key:
 
-Create a .env file in the root directory and add:
+VITE_UNSPLASH_ACCESS_KEY=your_unsplash_access_key
 
-VITE_UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
-
-👉 Get your free API key from Unsplash 4. Start the development server
+Then start the project:
 
 npm run dev
 
-Open your browser at http://localhost:5173
-🔗 Useful Resources
+The app will run locally at: http://localhost:5173
+🔍 What I Learned
 
-    📚 Unsplash API Docs
+    How to fetch and consume APIs using fetch()
 
-    ⚡ Vite Documentation
+    How to securely use environment variables for access keys
 
-    ⚛️ React Documentation
+    The concept of lifting state up to share between sibling components
 
-    🎨 Tailwind CSS Docs
+    How to render lists with .map()
+
+    How to structure data flow in a React component hierarchy
+
+    Tailwind CSS setup for future UI styling
+
+Feel free to fork, experiment, or build upon this foundation!
