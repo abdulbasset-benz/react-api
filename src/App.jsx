@@ -1,9 +1,12 @@
 import "./App.css";
 import SearchBar from "./components/SearchBar";
+import searchImages from "./api";
 
 function App() {
-  const handleSubmit = (term) => {
-    console.log("do a search with term : ", term);
+  const handleSubmit = async (term) => {
+    const result = await searchImages(term);
+
+    console.log(result);
   };
   return (
     <div className="min-w-screen bg-gray-100 flex items-center justify-center p-4">
