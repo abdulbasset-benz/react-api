@@ -1,42 +1,51 @@
-React + Vite – Unsplash API Image Search
+🚀 React + Vite – Unsplash API Image Search
 
-This project is built using React with Vite, and connects to the Unsplash Free API to fetch and display images based on user search input.
-🖼️ Project Overview
+A minimal React project using Vite and Tailwind CSS, connected to the Unsplash API to fetch and display images based on user queries.
+📸 Project Overview
 
-This is a simple image search application that demonstrates how to work with a third-party API in React, manage state, and render lists dynamically.
-🔧 Tech Stack
+This project demonstrates how to:
 
-    React
+    Connect to a public API (Unsplash)
 
-    Vite
+    Manage state in React
 
-    Tailwind CSS
+    Lift state between components
 
-    Unsplash API
+    Render dynamic lists
 
-    ESLint
+    Use Tailwind CSS (basic setup)
 
-    ⚠️ UI is minimal for now – I focused on functionality first. I plan to enhance the design and responsiveness later using Tailwind CSS.
+    🧪 The UI is still a work in progress — styling will be improved later. Functionality was the main focus for now.
 
-📚 What I Learned
+🛠️ Tech Stack
 
-    How to consume a public API and manage access keys securely.
+    ⚛️ React
 
-    Deeper understanding of React state management.
+    ⚡ Vite
 
-    How to lift state up and pass data between sibling components.
+    🎨 Tailwind CSS
 
-    How to use the .map() function to render lists.
+    🌐 Unsplash API
 
-    Basic setup and usage of Tailwind CSS.
+    🧹 ESLint
 
-🚀 Getting Started
+🧠 What I Learned
 
-If you want to run this project on your local machine, follow these steps:
+    How to consume an external API and manage access keys
 
-1. Clone the repository
+    How to lift state up from child to parent and pass it to siblings
 
-git clone git@github.com:abdulbasset-benz/react-api.git // using SSH
+    Usage of the .map() function to dynamically generate lists
+
+    Structuring components in a clean, reusable way
+
+    Initial setup and integration of Tailwind CSS for styling
+
+📦 Getting Started
+
+1. Clone the repo
+
+git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 
 2. Install dependencies
@@ -47,20 +56,19 @@ npm install
 
 Create a .env file in the root directory and add:
 
-VITE_UNSPLASH_ACCESS_KEY=your_unsplash_access_key
+VITE_UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
 
-You can get a free API key by registering at Unsplash Developers. 4. Run the development server
+👉 Get your free API key from Unsplash 4. Start the development server
 
 npm run dev
 
-Your app should now be running at http://localhost:5173.
+Open your browser at http://localhost:5173
+🔗 Useful Resources
 
-📎 Useful Links
+    📚 Unsplash API Docs
 
-    Unsplash API Docs
+    ⚡ Vite Documentation
 
-    Vite Documentation
+    ⚛️ React Documentation
 
-    React Documentation
-
-    Tailwind CSS
+    🎨 Tailwind CSS Docs
